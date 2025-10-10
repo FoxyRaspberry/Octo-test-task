@@ -101,22 +101,22 @@ body {
   }
 }
 
-.block-card__section {
+.card__section {
   padding: 50px 0;
 }
 
-.block-card__card-container {
+.card__card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.block-card__card {
+.card__card {
   padding: 0 16px 20px 16px;
   border: 1px solid rgba(211, 216, 228, 1);
 }
 
-.block-card__sticker {
+.card__sticker {
   position: relative;
   top: 0;
   left: 0;
@@ -131,7 +131,7 @@ body {
   color: #fff;
 }
 
-.block-card__sticker-category {
+.card__sticker-category {
   background-color: rgba(0, 182, 221, 1);
   font-weight: 400;
   font-size: 13px;
@@ -144,38 +144,38 @@ body {
 
 }
 
-.block-card__image {
+.card__image {
   display: block;
   margin: auto;
   width: 258px;
   height: 140px;
 }
 
-#block-card__image--1 {
+#card__image--1 {
   background-color: rgba(211, 216, 228, 1);
 }
 
-#block-card__image--2 {
+#card__image--2 {
   background-image: url(../assets/images/card-1.png);
 }
 
-#block-card__image--3 {
+#card__image--3 {
   background-color: rgba(255, 119, 154, 1);
 }
 
-#block-card__image--4 {
+#card__image--4 {
   background-color: rgba(0, 182, 221, 1);
 }
 
-#block-card__image--5 {
+#card__image--5 {
   background-image: url(../assets/images/card-2.png);
 }
 
-#block-card__image--6 {
+#card__image--6 {
   background-color: rgba(211, 216, 228, 1);
 }
 
-.block-card__author {
+.card__author {
   color: rgba(0, 182, 221, 1);
   font-weight: 400;
   font-size: 12px;
@@ -183,7 +183,7 @@ body {
   letter-spacing: 0.8px;
 }
 
-.block-card__title {
+.card__title {
   color: rgba(1, 1, 1, 1);
   font-weight: 400;
   font-size: 18px;
@@ -191,7 +191,7 @@ body {
   letter-spacing: 1px;
 }
 
-.block-card__description {
+.card__description {
   color: rgba(1, 1, 1, 1);
   font-weight: 400;
   font-size: 14px;
@@ -199,7 +199,7 @@ body {
   letter-spacing: 0.6px;
 }
 
-.block-card__button {
+.card__button {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   font-size: 12px;
