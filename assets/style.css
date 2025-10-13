@@ -109,15 +109,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  position: relative;
 }
 
 .solutions-card__card {
-  padding: 0 16px 20px 16px;
+  padding: 16px 16px 20px 16px;
   border: 1px solid rgba(211, 216, 228, 1);
 }
 
 .solutions-card__sticker {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(0, 182, 221, 1);
@@ -410,6 +411,7 @@ body {
   .call-to-action__elements-container {
     display: flex;
     flex-direction: column;
+    height: 294px;
   }
 
   .call-to-action__title {
@@ -446,18 +448,17 @@ body {
   }
 
   .call-to-action__img-container {
-    max-width: 455px;
-    height: 322px;
+    overflow: hidden;
     margin: auto;
+
   }
 
 
   .call-to-action__image {
     display: block;
     margin: auto;
-    width: 100%;
-    object-fit: contain;
-    height: 100%;
+    max-width: 455px;
+    height: 322px;
   }
 }
 
@@ -471,8 +472,7 @@ body {
   }
 
   .call-to-action__elements-container {
-    display: flex;
-    flex-direction: column;
+    height: 328px;
   }
 
   .call-to-action__title {
@@ -513,15 +513,13 @@ body {
     max-width: 458px;
     height: 380px;
     margin: auto;
+    overflow: hidden;
   }
 
 
   .call-to-action__image {
     display: block;
     margin: auto;
-    width: 100%;
-    object-fit: contain;
-    height: 100%;
   }
 }
 
@@ -534,17 +532,20 @@ body {
   display: flex;
   gap: 30px;
   padding-bottom: 20px;
+  overflow: hidden;
 }
 
 .card-carousel__card {
+  position: relative;
   padding: 16px 16px 20px 16px;
   border: 1px solid rgba(211, 216, 228, 1);
-  display: flex; 
+  display: none; 
   flex-direction: column;
   width: 290px;
 }
 
-.card-carousel__sticker {
+.card-carousel__sticker,
+.card-carousel__sticker--dark-blue {
   position: absolute;
   top: 0;
   left: 0;
@@ -559,17 +560,8 @@ body {
   color: #fff;
 }
 
-.card-carousel__sticker-category {
-  background-color: rgba(0, 182, 221, 1);
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 22px;
-  letter-spacing: 1.2px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 6px 15px;
-  color: #fff;
-
+.card-carousel__sticker--dark-blue {
+  background-color: rgba(8, 21, 128, 1);
 }
 
 .card-carousel__image {
@@ -577,7 +569,6 @@ body {
   margin: auto;
   width: 258px;
   height: 140px;
-  padding-bottom: 12px;
 }
 
 #card-carousel__image--1 {
@@ -598,6 +589,7 @@ body {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.8px;
+  padding-top: 12px;
   padding-bottom: 6px;
 }
 
@@ -620,7 +612,8 @@ body {
 
 }
 
-.card-carousel__button {
+.card-carousel__button,
+.card-carousel__button--dark-blue {
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
   font-size: 12px;
@@ -629,7 +622,13 @@ body {
   text-align: center;
   background-color: rgba(0, 182, 221, 1);
   border: 2px solid rgba(0, 182, 221, 1);
-  padding: 10px 28px;
+  padding: 8px 28px;
+}
+
+.card-carousel__button--dark-blue {
+  background-color: rgba(8, 21, 128, 1);
+  border: 2px solid rgba(8, 21, 128, 1);
+
 }
 
 .card-carousel__carousel-switch-button-container {
@@ -644,7 +643,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 22px;
-  height: 22px;}
+  height: 22px;
+}
 
 .card-carousel__carousel-switch-button-img {
   max-width: 100%;
@@ -657,26 +657,217 @@ body {
   transform: rotate(180deg);
 }
 
-@media (width >= 576px) {
-  .wrapper {
-    width: 546px;
-  }
+@media (min-width: 576px) and (max-width: 767px) {
+    .card-carousel__card {
+        display: none; /* Скрыть карточки по умолчанию */
+        width: 258px;
+    }
+    .card-carousel__card:nth-child(-n+2) {
+        display: block; /* Показываем 2 карточки */
+    }
+
+    .card-carousel__image {
+      width: 226px;
+      height: 140px;
+    }
+
+    .card-carousel__carousel-switch-button-container {
+      justify-content: flex-start;
+    }
+
 }
 
-@media (width >= 768px) {
-  .wrapper {
-    width: 720px;
-  }
+@media (width >= 768px) and (width < 992px) {
+    .card-carousel__card {
+        display: none; /* Скрыть карточки по умолчанию */
+        width: 345px;
+        padding: 28px;
+    }
+    .card-carousel__card:nth-child(-n+3) {
+        display: block; /* Показываем 3 карточки */
+    }
+
+    .card-carousel__section {
+      padding: 60px 0;
+    }
+
+    .card-carousel__card-container {
+      padding-bottom: 30px;
+    }
+
+
+    .card-carousel__sticker,
+    .card-carousel__sticker--dark-blue {
+      top: 12px;
+    }
+
+    .card-carousel__image {
+      width: 289px;
+      height: 150px;
+    }
+
+    .card-carousel__author {
+      padding-top: 18px;
+    }
+
+    .card-carousel__title {
+      padding-bottom: 12px;
+    }
+
+    .card-carousel__description {
+      padding-bottom: 26px;
+    }
+
+    .card-carousel__button,
+    .card-carousel__button--dark-blue {
+      padding: 9px 28px;
+    }
+
+    .card-carousel__carousel-switch-button-container {
+      justify-content: flex-start;
+      gap: 25px;
+    }
+
+    .card-carousel__carousel-switch-button {
+      width: 26px;
+      height: 26px;
+    }
+
 }
 
-@media (width >= 992px) {
-  .wrapper {
-    width: 940px;
-  }
+@media (width >= 992px) and (width < 1200px) {
+    .card-carousel__card {
+        display: none; /* Скрыть карточки по умолчанию */
+        width: 455px;
+        padding: 30px;
+
+    }
+    .card-carousel__card:nth-child(-n+3) {
+        display: block; /* Показываем 3 карточки */
+    }
+
+    .card-carousel__card-container {
+      padding-bottom: 40px;
+    }
+
+
+    .card-carousel__section {
+      padding: 80px 0;
+    }
+
+    .card-carousel__sticker,
+    .card-carousel__sticker--dark-blue {
+      top: 12px;
+    }
+
+    .card-carousel__image {
+      width: 395px;
+      height: 170px;
+    }
+
+    .card-carousel__author {
+      padding-top: 20px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .card-carousel__title {
+      padding-bottom: 16px;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 1.2px;
+    }
+
+    .card-carousel__description {
+      padding-bottom: 30px;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.8px;
+    }
+
+    .card-carousel__button,
+    .card-carousel__button--dark-blue {
+      padding: 9px 35px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .card-carousel__carousel-switch-button-container {
+      justify-content: flex-start;
+      gap: 25px;
+    }
+
+    .card-carousel__carousel-switch-button {
+      width: 26px;
+      height: 26px;
+    }
+
 }
 
 @media (width >= 1200px) {
-  .wrapper {
-    width: 1140px;
-  }
+    .card-carousel__card {
+        display: none; /* Скрыть карточки по умолчанию */
+        width: 360px;
+        padding: 30px;
+    }
+    .card-carousel__card:nth-child(-n+3) {
+        display: block; /* Показываем 3 карточки */
+    }
+
+    .card-carousel__section {
+      padding: 100px 0 166px;
+    }
+
+    .card-carousel__card-container {
+      padding-bottom: 40px;
+    }
+
+
+    .card-carousel__sticker,
+    .card-carousel__sticker--dark-blue {
+      top: 12px;
+    }
+
+    .card-carousel__image {
+      width: 300px;
+      height: 170px;
+    }
+
+    .card-carousel__author {
+      padding-top: 20px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .card-carousel__title {
+      padding-bottom: 16px;
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 1.2px;
+    }
+
+    .card-carousel__description {
+      padding-bottom: 30px;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.8px;
+    }
+
+    .card-carousel__button,
+    .card-carousel__button--dark-blue {
+      padding: 9px 35px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .card-carousel__carousel-switch-button-container {
+      justify-content: flex-start;
+      gap: 25px;
+    }
+
+    .card-carousel__carousel-switch-button {
+      width: 26px;
+      height: 26px;
+    }
+
 }
