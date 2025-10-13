@@ -11,25 +11,26 @@
   }
 }
 
-@media (576px <= width < 768px) {
+@media (576px <=width < 768px) {
   .util-block--not-sm.util-block--not-sm {
     display: none;
   }
 }
 
-@media (768px <= width < 992px) {
+@media (768px <=width < 992px) {
   .util-block--not-md.util-block--not-md {
     display: none;
   }
 }
 
-@media (992px <= width < 1200px) {
+@media (992px <=width < 1200px) {
   .util-block--not-lg.util-block--not-lg {
     display: none;
   }
 }
 
-@media (width >= 1200px) {
+@media (width >=1200px) {
+
   /* It is not used */
   .util-block--not-xl.util-block--not-xl {
     display: none;
