@@ -299,10 +299,6 @@ body {
   .solutions-card__description {
     padding-bottom: 26px;
   }
-
-  .solutions-card__button {
-    padding: 8px 28px;
-  }
 }
 
 @media (width >=992px) {
@@ -765,7 +761,7 @@ body {
   text-align: center;
   background-color: rgba(0, 182, 221, 1);
   border: 2px solid rgba(0, 182, 221, 1);
-  padding: 8px 28px;
+  padding: 7px 28px;
 }
 
 .card-carousel__card--dark-blue .card-carousel__button {
@@ -852,10 +848,6 @@ body {
     padding-bottom: 26px;
   }
 
-  .card-carousel__button {
-    padding: 9px 28px;
-  }
-
   .card-carousel__carousel-switch-button-container {
     justify-content: flex-start;
     gap: 25px;
@@ -913,12 +905,6 @@ body {
     letter-spacing: 0.8px;
   }
 
-  .card-carousel__button {
-    padding: 9px 35px;
-    font-size: 13px;
-    line-height: 20px;
-  }
-
   .card-carousel__carousel-switch-button-container {
     justify-content: flex-start;
     gap: 25px;
@@ -927,6 +913,14 @@ body {
   .card-carousel__carousel-switch-button {
     width: 26px;
     height: 26px;
+  }
+}
+
+@media (width >=992px) {
+  .card-carousel__button {
+    padding: 8px 35px;
+    font-size: 13px;
+    line-height: 20px;
   }
 }
 
@@ -973,12 +967,6 @@ body {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.8px;
-  }
-
-  .card-carousel__button {
-    padding: 9px 35px;
-    font-size: 13px;
-    line-height: 20px;
   }
 
   .card-carousel__carousel-switch-button-container {
