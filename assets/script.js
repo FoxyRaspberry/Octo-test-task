@@ -32,9 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     showCards(currentIndex);
+
+    window.addEventListener('resize', () => {
+        showCards(currentIndex);
+    });
 });
-
-
-// window.addEventListener('resize', () => {
-//     showCards(currentIndex);
-// });
