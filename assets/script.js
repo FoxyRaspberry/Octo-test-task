@@ -15,10 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function getVisibleCardsCount() {
         const width = window.innerWidth;
         if (width < 576) return 1;
-        if (width >= 576 && width < 768) return 2;
-        if (width >= 768 && width <= 992) return 2;
-        if (width > 992 && width < 1200) return 2;
-        return 3; // Для ширины >= 1200px
+        if (width < 1200) return 2;
+        return 3;
     }
 
     nextButton.addEventListener('click', () => {
