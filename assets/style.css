@@ -152,27 +152,27 @@ body {
   height: 140px;
 }
 
-#solutions-card__image--1 {
+.solutions-card__image--1 {
   background-color: rgba(211, 216, 228, 1);
 }
 
-#solutions-card__image--2 {
+.solutions-card__image--2 {
   background-image: url(../assets/images/card-1.png);
 }
 
-#solutions-card__image--3 {
+.solutions-card__image--3 {
   background-color: rgba(255, 119, 154, 1);
 }
 
-#solutions-card__image--4 {
+.solutions-card__image--4 {
   background-color: rgba(0, 182, 221, 1);
 }
 
-#solutions-card__image--5 {
+.solutions-card__image--5 {
   background-image: url(../assets/images/card-2.png);
 }
 
-#solutions-card__image--6 {
+.solutions-card__image--6 {
   background-color: rgba(211, 216, 228, 1);
 }
 
@@ -707,15 +707,15 @@ body {
   height: 140px;
 }
 
-#card-carousel__image--1 {
+.card-carousel__image--1 {
   background-color: rgba(211, 216, 228, 1);
 }
 
-#card-carousel__image--2 {
+.card-carousel__image--2 {
   background-image: url(../assets/images/card-1.png);
 }
 
-#card-carousel__image--3 {
+.card-carousel__image--3 {
   background-color: rgba(255, 119, 154, 1);
 }
 
