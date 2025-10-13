@@ -4,6 +4,39 @@
   box-sizing: border-box;
 }
 
+
+@media (width < 576px) {
+  .util-block--not-xs.util-block--not-xs {
+    display: none;
+  }
+}
+
+@media (576px <= width < 768px) {
+  .util-block--not-sm.util-block--not-sm {
+    display: none;
+  }
+}
+
+@media (768px <= width < 992px) {
+  .util-block--not-md.util-block--not-md {
+    display: none;
+  }
+}
+
+@media (992px <= width < 1200px) {
+  .util-block--not-lg.util-block--not-lg {
+    display: none;
+  }
+}
+
+@media (width >= 1200px) {
+  /* It is not used */
+  .util-block--not-xl.util-block--not-xl {
+    display: none;
+  }
+}
+
+
 body {
   font-family: "Noto Sans", sans-serif;
   color: #333;
@@ -231,11 +264,6 @@ body {
     width: 258px;
   }
 
-  .solutions-card__card:nth-child(3) {
-    display: none;
-  }
-
-
   .solutions-card__image {
     width: 226px;
   }
@@ -349,10 +377,6 @@ body {
   .solutions-card__card {
     width: 360px;
     padding: 30px;
-  }
-
-  .solutions-card__card:nth-child(3) {
-    display: block;
   }
 
   .solutions-card__sticker,
@@ -801,10 +825,6 @@ body {
     width: 258px;
   }
 
-  .card-carousel__card:nth-child(-n+2) {
-    display: block;
-  }
-
   .card-carousel__image {
     width: 226px;
     height: 140px;
@@ -820,10 +840,6 @@ body {
     display: none;
     width: 345px;
     padding: 28px;
-  }
-
-  .card-carousel__card:nth-child(-n+3) {
-    display: block;
   }
 
   .card-carousel__section {
@@ -879,10 +895,6 @@ body {
     width: 455px;
     padding: 30px;
 
-  }
-
-  .card-carousel__card:nth-child(-n+3) {
-    display: block;
   }
 
   .card-carousel__card-container {
@@ -947,10 +959,6 @@ body {
     display: none;
     width: 360px;
     padding: 30px;
-  }
-
-  .card-carousel__card:nth-child(-n+3) {
-    display: block;
   }
 
   .card-carousel__section {
