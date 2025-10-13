@@ -250,7 +250,7 @@ body {
   text-align: center;
   background-color: rgba(0, 182, 221, 1);
   border: 2px solid rgba(0, 182, 221, 1);
-  padding: 10px 28px;
+  padding: 7px 28px;
 }
 
 .solutions-card__button--dark-blue {
@@ -266,11 +266,6 @@ body {
 
   .solutions-card__image {
     width: 226px;
-  }
-
-  .solutions-card__button,
-  .solutions-card__button--dark-blue {
-    padding: 8px 28px;
   }
 }
 
@@ -359,9 +354,9 @@ body {
 
   .solutions-card__button,
   .solutions-card__button--dark-blue {
+    padding: 8px 35px;
     font-size: 13px;
     line-height: 20px;
-    padding: 9px 35px;
   }
 }
 
@@ -411,13 +406,6 @@ body {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.8px;
-  }
-
-  .solutions-card__button,
-  .solutions-card__button--dark-blue {
-    font-size: 13px;
-    line-height: 20px;
-    padding: 9px 35px;
   }
 }
 
