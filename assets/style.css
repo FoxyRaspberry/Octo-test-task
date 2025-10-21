@@ -170,7 +170,7 @@ body {
   background-color: rgba(0, 182, 221, 1);
   font-weight: 400;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 22px;
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
@@ -319,7 +319,7 @@ body {
   .solutions-card__sticker {
     top: 12px;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 24px;
     letter-spacing: 1.2px;
     padding: 6px 15px;
   }
@@ -373,7 +373,7 @@ body {
   .solutions-card__sticker {
     top: 12px;
     font-size: 13px;
-    line-height: 22px;
+    line-height: 24px;
     letter-spacing: 1.2px;
     padding: 6px 16px;
   }
@@ -697,11 +697,11 @@ body {
   background-color: rgba(0, 182, 221, 1);
   font-weight: 400;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 22px;
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
-  padding: 5px 14px;
+  padding: 7px 14px;
   color: #fff;
 }
 
